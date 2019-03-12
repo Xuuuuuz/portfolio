@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>hello</p>
+{% for gallery in gallerys.all %}
+    {{gallery.title}}
+
+    <img src="{{gallery.image.url}}">
+{% endfor %}
+
+</body>
+</html>

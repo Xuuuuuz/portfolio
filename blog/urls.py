@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import Blog_page
+from .views import Blog_page,Blog_text
 
 urlpatterns = [
     path('', Blog_page),
+    path('<int:blog_id>/', Blog_text),
 ]
